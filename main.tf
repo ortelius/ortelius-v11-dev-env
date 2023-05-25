@@ -48,7 +48,7 @@ resource "kind_cluster" "ortelius" {
 resource "helm_release" "ortelius" {
   name              = "ortelius"
   chart             = "ortelius"
-  repository        = "https://ortelius.github.io/ortelius-charts/"
+  repository        = "https://github.com/ortelius/scec-charts/blob/gh-pages/index.yaml"
   namespace         = var.ortelius_namespace
   create_namespace  = true
   recreate_pods     = true
